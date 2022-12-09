@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1f4f7b3-1637-434e-9be3-fba2b999bf2b" name="Changes" comment="✨ Add empty solution&#10;&#10;Includes the `.gitignore` file">
-      <change afterPath="$PROJECT_DIR$/src/GraphQL.OneOf/GraphQL.OneOf.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphQL.OneOf.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GraphQL.OneOf.sln" afterDir="false" />
+    <list default="true" id="c1f4f7b3-1637-434e-9be3-fba2b999bf2b" name="Changes" comment="✨ Add `GraphQL.OneOf` library project">
+      <change beforePath="$PROJECT_DIR$/src/GraphQL.OneOf/GraphQL.OneOf.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphQL.OneOf/GraphQL.OneOf.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
