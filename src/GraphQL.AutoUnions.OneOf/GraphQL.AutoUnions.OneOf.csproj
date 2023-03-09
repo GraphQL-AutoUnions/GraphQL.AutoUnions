@@ -2,10 +2,15 @@
 
     <PropertyGroup>
         <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;netstandard2.0;netstandard2.1</TargetFrameworks>
+        <AssemblyName>GraphQL.AutoUnions.OneOf</AssemblyName>
+        <RootNamespace>GraphQL.AutoUnions.OneOf</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="GraphQL" Version="7.2.1" />
+      <ProjectReference Include="..\GraphQL.AutoUnions\GraphQL.AutoUnions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="OneOf" Version="3.0.223" />
     </ItemGroup>
 

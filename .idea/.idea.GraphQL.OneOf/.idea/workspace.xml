@@ -1,30 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1f4f7b3-1637-434e-9be3-fba2b999bf2b" name="Changes" comment="✨ Add `GraphQL.OneOf` library project">
-      <change beforePath="$PROJECT_DIR$/src/GraphQL.OneOf/GraphQL.OneOf.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphQL.OneOf/GraphQL.OneOf.csproj" afterDir="false" />
+    <list default="true" id="c1f4f7b3-1637-434e-9be3-fba2b999bf2b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/AutoRegisteringUnionGraphType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/AutoRegisteringUnionGraphTypeMappingProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/AutoRegisteringUnionMemberGraphType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/GraphQLBuilderExtensionMethods.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/IUnionCheck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/IUnionMemberTypeResolver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/IUnionValueAccessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/UnionCheck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/UnionMemberTypeResolver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/UnionResolveFieldContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/UnionValueAccessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/EnumerationIntegrationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/GraphQL.AutoUnions.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/SingleIntegrationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/SubscriptionIntegrationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/Utility/Fallbacks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/Utility/Helpers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/Utility/Schemas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GraphQL.OneOf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraphQL.OneOf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphQL.OneOf.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GraphQL.OneOf.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphQL.OneOf/GraphQL.OneOf.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphQL.AutoUnions/GraphQL.AutoUnions.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/GraphQL.OneOf.Tests/GraphQL.OneOf.Tests.csproj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/25288f22b7c548d8adf4cb3c0171568e75600/39/e840a67d/DatapointSourceAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53f68e7d96cb4fc7a99643667e11faa329000/1d/463bc897/Mock.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53f68e7d96cb4fc7a99643667e11faa329000/38/5cdbd34d/Mock`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/633820b9579f4675babed79321255f1767788/17/641e9f4b/ArgumentException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/633820b9579f4675babed79321255f1767788/ba/3bb9e21e/ArgumentOutOfRangeException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861e23c672704a4a8eca9c234af0cac552e590/b7/88999b92/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cce1f8af94484ac496a8de81337cb53e18c00/47/e2a50e0d/IOneOf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cce1f8af94484ac496a8de81337cb53e18c00/7a/24449816/IOneOf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cce1f8af94484ac496a8de81337cb53e18c00/94/fd79e98e/OneOf`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cce1f8af94484ac496a8de81337cb53e18c00/9e/85ba45dd/OneOf`3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cce1f8af94484ac496a8de81337cb53e18c00/a2/20e69153/OneOf`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cce1f8af94484ac496a8de81337cb53e18c00/d7/f71ed842/OneOfBase`3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fed532e5786e449ba9e58159ac29c505b1600/d7/716e13ea/IGraphTypeMappingProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/d22f1b471884497f88e644e5c0bdae034388/87/06330696/Microsoft.CSharp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0f1f87a17c797c7aefb5c86e8db586a9951c8e58b31f2c42ba39dd51ffa0/CallSiteFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/16e6dcaab0be4156ad31af88b1ed8700a20270/_ea5d2/IObservable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1e86329d30e794eb815bae1f22a790dad059426f0453f67e5f86c18acb1066/DocumentExecuter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f18529517a1d3c051def436a4696cc374fd1877837b7e6cd9efc464122ef341/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/349132c47aa74911a676cd31f9d173e68c11f9ac207e9ebb68b3532bc7b4/AutoRegisteringObjectGraphType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/379483fd941e7552de79710e8116d14ecc6470566bb13edeb81dbd61ff4ba/IResolveFieldContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3e6679ed2efcd8fd75d2ca974e6edb790d4f0f22118686c3a49fc69924f55f/ExecutionStrategy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4856da68b40b96658a173e3fcfaa8482ba0be3c24da52144f2482b3dfcd3c/UnionGraphType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/487d92ce2887d2a84d9be3561565ceacfa2bc534f0de6bb8c1696cc4a4d7b9/MemberResolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4bc47aaa5947b9efd33757cab615692945b96b24635a14fe90eb26a9afbbde52/AutoSchema.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/56ca2e7f2b4c0abe083d5ec5058979092e7e367b5c4dba6e8944a661f4c54e3/MicrosoftDIGraphQLBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5cc3985e6eda233f29702776a15f5042970103bbfca6914ad9e61a8c42d31/SchemaValidationVisitor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5fe79253834f507488ce54ce82d5c7f6bc241dd279a0331d86cae424aa156b7/AutoRegisteringInputObjectGraphType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6ca6b9cf28fc68759813bdd857d7cf1ce778bc6d8e8886df025cdc4dc51c2e7/ComplexGraphType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d94882a16b911cbc87e954279c915386ff65283b0c4a7ce2b83df187d725/ObjectGraphType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/87c1dd833e1c3b867920d1248f993b6cc3f4be2881fb202ce7735eccf82fe3/Socket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8ab66ee74d7f4f7de31e6da3f255050d1579ee0670211680bc5c3f8c58aa/OutputTypeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9ff6e15065aca4366778dbe1a1b71b9164dea3534b71e1795c33fd6f159f52/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a298e0276cd16e82a8c4ccc81257bc7af5e15d863243fa955edf2df1a2a7c5/AsyncTaskMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/af17e02818ae4c6a5448adc16a0cd8aae9238473c1a2aac59ea48663ed873db/TypeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b2655153e94c96ca3a5a9d8735f5b7453d5a79fa8307a4522835026b730abee/BehaviorSubject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b362b454b5bc03b2a6c0531794814e59c8d3c8e1016dfbafe5914c3564e57/ISchema.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ba92acced85e37b8aa44b5688db76aed2e9deccbdd6027ce21c5d270bbc574/IFieldResolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bda7a043a550b7b15aed6d4b3821e8c06a4883ba54ca1389b78b5afb9056/NameValidator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c625622e213fe87ffe77796b96b18d65375f6ae9ca9caae6940d27142bc625f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6ad457575d35dcbff26c9a5e3fb1d92f1d3c55f25ef6ebf475367b5d8/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ceb34b5372334df5ba95cfec477652ffa1d30e9b36dfbd53ce38175ae4/AutoRegisteringGraphTypeMappingProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d1a794f746873b96b7666ad189db9acbd434c02da24e74b8f4dce476bf5048/TheoryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d3d25fb85b97197088851717c33946b81b389fb9f9a6badec74a6ccf21c1ecba/SchemaTypes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d4bddc64254ffaabad3dfe6122784168283fed3763af2a542f3611931049ee28/SourceStreamMethodResolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/df67eb1826cea59c755d5ba28045565e6e15e227e0a98c633df2b27e5eba8823/ServiceProviderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dfa4eb74847cd1b4e8336f55b62758db436e4b818263412ef361bc5972c1ef6/GraphQLBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4bf31534e676a6643a8a293217d6a5a01064e18d888f7520ee27d3f7d115/ObjectExecutionNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e87846dc47443d188f0755065dc4eeebc4c2713c0502765e96adeb52ad14883/Schema.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e9f1cd9f71be6ac06489eb91fe79c114c73b67f7bb46f6672b9bd7d976112/GraphType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f271b14dde2e7f26eb8d199ca41fc555c217faeb657b3983254431e33b362/GraphQLTypeReference.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f48a5cefbe38d3456499a5384f7eb3711e763eb2d410ffea6eccc6adc5216f/GraphQLBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6ddd117a1e6734f4214dae167d6c5d98d36ab494885533f7c7dcf4c94581b/IAbstractGraphType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ff8a7e4f95f47fb101379ffa0471d9bd921870679cb8ae5fbf431fc369c24/ResolveFieldContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GraphQL.AutoUnions/AutoRegisteringUnionGraphType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GraphQL.AutoUnions/AutoRegisteringUnionGraphTypeMappingProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GraphQL.AutoUnions/AutoRegisteringUnionMemberGraphType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GraphQL.AutoUnions/UnionResolveFieldContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/Utility/Fallbacks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/Utility/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2Ig7auPrDKD9xOgCujFDJJrVXn1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\dpatiu\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\dpatiu\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\dpatiu\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,6 +134,16 @@
       <workItem from="1670591445463" duration="626000" />
       <workItem from="1670592088854" duration="17000" />
       <workItem from="1670592149913" duration="312000" />
+      <workItem from="1670744276030" duration="8722000" />
+      <workItem from="1670829986949" duration="20540000" />
+      <workItem from="1671693710027" duration="11352000" />
+      <workItem from="1672744797632" duration="1547000" />
+      <workItem from="1672764320026" duration="1876000" />
+      <workItem from="1672835635668" duration="7376000" />
+      <workItem from="1674238980664" duration="946000" />
+      <workItem from="1676787491607" duration="16072000" />
+      <workItem from="1676965879259" duration="9388000" />
+      <workItem from="1677402029861" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="✨ Add empty solution&#10;&#10;Includes the `.gitignore` file">
       <created>1670591688088</created>
@@ -51,7 +159,35 @@
       <option name="project" value="LOCAL" />
       <updated>1670592291572</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="🏗️ Update project framework support">
+      <created>1670593714076</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670593714076</updated>
+    </task>
+    <task id="LOCAL-00004" summary="🏗️ Update project framework support">
+      <created>1670594448499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670594448499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add `GraphQL.OneOf.Tests` project">
+      <created>1670595267742</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670595267742</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add `GraphQL.OneOf.Tests` project">
+      <created>1670595472853</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670595472853</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,6 +210,145 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="✨ Add empty solution&#10;&#10;Includes the `.gitignore` file" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Add empty solution&#10;&#10;Includes the `.gitignore` file" />
+    <MESSAGE value="️ Update project framework support" />
+    <MESSAGE value="Add `GraphQL.OneOf.Tests` project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `GraphQL.OneOf.Tests` project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/349132c47aa74911a676cd31f9d173e68c11f9ac207e9ebb68b3532bc7b4/AutoRegisteringObjectGraphType.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\dpatiu\AppData\Roaming\JetBrains\Rider2022.3\resharper-host\SourcesCache\349132c47aa74911a676cd31f9d173e68c11f9ac207e9ebb68b3532bc7b4\AutoRegisteringObjectGraphType.cs" initialLine="27" containingFunctionPresentation="constructor 'AutoRegisteringObjectGraphType'">
+            <startOffsets>
+              <option value="1311" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1352" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/349132c47aa74911a676cd31f9d173e68c11f9ac207e9ebb68b3532bc7b4/AutoRegisteringObjectGraphType.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\dpatiu\AppData\Roaming\JetBrains\Rider2022.3\resharper-host\SourcesCache\349132c47aa74911a676cd31f9d173e68c11f9ac207e9ebb68b3532bc7b4\AutoRegisteringObjectGraphType.cs" initialLine="42" containingFunctionPresentation="method 'ConfigureGraph'">
+            <startOffsets>
+              <option value="2037" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2101" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3e6679ed2efcd8fd75d2ca974e6edb790d4f0f22118686c3a49fc69924f55f/ExecutionStrategy.cs</url>
+          <line>673</line>
+          <properties documentPath="C:\Users\dpatiu\AppData\Roaming\JetBrains\Rider2022.3\resharper-host\SourcesCache\3e6679ed2efcd8fd75d2ca974e6edb790d4f0f22118686c3a49fc69924f55f\ExecutionStrategy.cs" initialLine="673" containingFunctionPresentation="method 'ValidateNodeResult'">
+            <startOffsets>
+              <option value="32508" />
+            </startOffsets>
+            <endOffsets>
+              <option value="32752" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d94882a16b911cbc87e954279c915386ff65283b0c4a7ce2b83df187d725/ObjectGraphType.cs</url>
+          <line>10</line>
+          <properties documentPath="C:\Users\dpatiu\AppData\Roaming\JetBrains\Rider2022.3\resharper-host\SourcesCache\7d94882a16b911cbc87e954279c915386ff65283b0c4a7ce2b83df187d725\ObjectGraphType.cs" initialLine="10" containingFunctionPresentation="property 'IsTypeOf'">
+            <startOffsets>
+              <option value="450" />
+            </startOffsets>
+            <endOffsets>
+              <option value="454" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/GraphQL.AutoUnions/AutoRegisteringUnionGraphType.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\dpatiu\Projects\Personal\GraphQL.OneOf\src\GraphQL.OneOf\AutoRegisteringUnionGraphType.cs" initialLine="33" containingFunctionPresentation="constructor 'AutoRegisteringUnionGraphType'" />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5cc3985e6eda233f29702776a15f5042970103bbfca6914ad9e61a8c42d31/SchemaValidationVisitor.cs</url>
+          <line>99</line>
+          <properties documentPath="C:\Users\dpatiu\AppData\Roaming\JetBrains\Rider2022.3\resharper-host\SourcesCache\5cc3985e6eda233f29702776a15f5042970103bbfca6914ad9e61a8c42d31\SchemaValidationVisitor.cs" initialLine="99" containingFunctionPresentation="method 'VisitInterface'">
+            <startOffsets>
+              <option value="4919" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5023" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d4bddc64254ffaabad3dfe6122784168283fed3763af2a542f3611931049ee28/SourceStreamMethodResolver.cs</url>
+          <line>78</line>
+          <properties documentPath="C:\Users\dpatiu\AppData\Roaming\JetBrains\Rider2022.3\resharper-host\SourcesCache\d4bddc64254ffaabad3dfe6122784168283fed3763af2a542f3611931049ee28\SourceStreamMethodResolver.cs" initialLine="78" containingFunctionPresentation="method 'BuildSourceStreamResolver'">
+            <startOffsets>
+              <option value="4165" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4226" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/SubscriptionIntegrationTests.cs</url>
+          <line>59</line>
+          <properties documentPath="C:\Users\dpatiu\Projects\Personal\GraphQL.OneOf\tests\GraphQL.AutoUnions.Tests\SubscriptionIntegrationTests.cs" initialLine="63" containingFunctionPresentation="method 'ShouldWork'">
+            <startOffsets>
+              <option value="1949" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2072" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/GraphQL.AutoUnions.Tests/SubscriptionIntegrationTests.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\dpatiu\Projects\Personal\GraphQL.OneOf\tests\GraphQL.AutoUnions.Tests\SubscriptionIntegrationTests.cs" initialLine="39" containingFunctionPresentation="method 'UserChanged'">
+            <startOffsets>
+              <option value="1189" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1206" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="System.InvalidOperationException" isInternal="false" displayValue="InvalidOperationException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#GraphQL.Types.FieldType" memberName="Type" />
+        <PinnedItemInfo parentTag="Type#GraphQL.Types.Schema+SchemaDebugView" memberName="Query" />
+        <PinnedItemInfo parentTag="Type#OneOf.OneOf`2" memberName="Value" />
+        <PinnedItemInfo parentTag="Type#System.Exception" memberName="SerializationStackTraceString" />
+        <PinnedItemInfo parentTag="Frame#GraphQL.OneOf.AutoRegisteringUnionGraphType`1..ctor" memberName="unionMemberTypes" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="RiderUnitTests">
+        <watch expression="unionMemberReferences[oneOf.Value.GetType()]" language="C#" />
+        <watch expression="result" language="C#" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
