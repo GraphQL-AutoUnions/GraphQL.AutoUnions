@@ -1,6 +1,6 @@
 * * *
 
-GraphQL.AutoUnions.OneOf
+WIP GraphQL.AutoUnions.OneOf
 ========================
 
 A library that adds support for auto schema with discriminated unions when using the [OneOf](https://github.com/mcintyre321/OneOf) library.
