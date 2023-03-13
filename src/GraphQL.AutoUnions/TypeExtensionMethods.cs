@@ -3,7 +3,7 @@
     using System;
     using GraphQL.Execution;
 
-    public static class TypeExtensionMethods
+    internal static class TypeExtensionMethods
     {
         public static Type GraphQlUnionMemberClrType(this Type type)
         {

@@ -2,7 +2,7 @@
 {
     using GraphQL.Resolvers;
 
-    internal interface IUnionMemberFieldResolverFactory<TUnion>
+    public interface IUnionMemberFieldResolverFactory<TUnion>
     {
         IFieldResolver Create(IFieldResolver parentResolver);
     }

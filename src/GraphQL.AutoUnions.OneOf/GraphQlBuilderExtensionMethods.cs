@@ -1,11 +1,9 @@
 ﻿namespace GraphQL
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
-    using System.Reflection;
     using GraphQL.DI;
-    using GraphQL.Execution;
-    using GraphQL.Types;
     using OneOf;
 
     public static class GraphQlBuilderExtensionMethods
@@ -19,26 +17,32 @@
                 (oneOf) => oneOf.Value,
                 (oneOfType) =>
                 {
-                    var type = oneOfType;
-
-                    while (type != typeof(object))
-                    {
-                        if (type.IsGenericType &&
-                            (type.GetGenericTypeDefinition().AssemblyQualifiedName.StartsWith("OneOf.OneOfBase`") ||
-                             type.GetGenericTypeDefinition().AssemblyQualifiedName.StartsWith("OneOf.IOneOf`")))
+                    return oneOfType.GetBaseTypes()
+                        .FirstOrDefault((type) =>
                         {
-                            return type.GetGenericArguments();
-                        }
+                            var assemblyQualifiedName = type.GetGenericTypeDefinition().AssemblyQualifiedName;
 
-                        type = oneOfType.BaseType;
-                    }
-
-                    return oneOfType.GetGenericArguments();
+                            return assemblyQualifiedName != null &&
+                                   type.IsGenericType &&
+                                   (assemblyQualifiedName.StartsWith("OneOf.OneOfBase`") ||
+                                    assemblyQualifiedName.StartsWith("OneOf.IOneOf`"));
+                        })
+                        ?.GetGenericArguments() ?? throw new InvalidOperationException($"Cannot determine the member types of OneOf union {oneOfType.AssemblyQualifiedName}");
                 },
                 (actualType, _) => actualType.GraphQLName()
             );
 
             return builder;
+        }
+        
+        private static IEnumerable<Type> GetBaseTypes(this Type type) {
+            if(type.BaseType == null) return type.GetInterfaces();
+
+            return Enumerable
+                .Repeat(type.BaseType, 1)
+                .Concat(type.GetInterfaces())
+                .Concat(type.GetInterfaces().SelectMany<Type, Type>(GetBaseTypes))
+                .Concat(type.BaseType.GetBaseTypes());
         }
     }
 }

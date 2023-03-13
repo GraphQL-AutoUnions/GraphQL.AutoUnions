@@ -1,6 +1,6 @@
 namespace GraphQL.AutoUnions
 {
-    public interface IUnionValueAccessor<T>
+    internal interface IUnionValueAccessor<T>
     {
         object Access(T union);
     }

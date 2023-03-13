@@ -3,15 +3,38 @@
     <PropertyGroup>
         <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;netstandard2.0;netstandard2.1</TargetFrameworks>
         <AssemblyName>GraphQL.AutoUnions.OneOf</AssemblyName>
-        <RootNamespace>GraphQL.AutoUnions.OneOf</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0-beta.0</Version>
+        <Title>GraphQL.AutoUnions.OneOf</Title>
+        <Description>A library that adds support for auto schema with discriminated unions when using the OneOf library.</Description>
+        <PackageProjectUrl>https://github.com/lolismatic/GraphQL.OneOf/tree/main/src/GraphQL.AutoUnions.OneOf</PackageProjectUrl>
+        <PackageIcon>logo.64x64.png</PackageIcon>
+        <RepositoryUrl>https://github.com/lolismatic/GraphQL.OneOf</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>GraphQL OneOf json api</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseUrl>https://licenses.nuget.org/Apache-2.0</PackageLicenseUrl>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\GraphQL.AutoUnions\GraphQL.AutoUnions.csproj" />
+        <ProjectReference Include="..\GraphQL.AutoUnions\GraphQL.AutoUnions.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="OneOf" Version="3.0.223" />
+        <PackageReference Include="OneOf" Version="3.0.160"/>
+        <PackageReference Include="OneOf.SourceGenerator" Version="3.0.184"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\assets\logo.64x64.png">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+            <Link>assets\logo.64x64.png</Link>
+        </None>
+        <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+        <None Update="docs\README.md">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>

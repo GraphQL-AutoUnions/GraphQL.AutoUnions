@@ -3,8 +3,10 @@ namespace GraphQL.AutoUnions
     using System;
     using GraphQL.Types;
 
-    internal class AutoRegisteringUnionMemberGraphType<TUnion, TUnionMember> : AutoRegisteringObjectGraphType<TUnionMember>
+    /// <inheritdoc />
+    public class AutoRegisteringUnionMemberGraphType<TUnion, TUnionMember> : AutoRegisteringObjectGraphType<TUnionMember>
     {
+        /// <inheritdoc />
         public AutoRegisteringUnionMemberGraphType(
             IIsTypeOfFactory<TUnion> isTypeOfFactory,
             IUnionMemberFieldResolverFactory<TUnion> unionMemberFieldResolverFactory

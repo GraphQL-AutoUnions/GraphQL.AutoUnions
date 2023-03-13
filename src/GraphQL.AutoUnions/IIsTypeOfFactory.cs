@@ -2,7 +2,7 @@
 {
     using System;
 
-    internal interface IIsTypeOfFactory<TUnion>
+    public interface IIsTypeOfFactory<TUnion>
     {
         Func<object, bool> Create(Func<object, bool> previous);
     }

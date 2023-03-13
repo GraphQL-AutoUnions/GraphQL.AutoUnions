@@ -3,11 +3,34 @@
     <PropertyGroup>
         <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;netstandard2.0;netstandard2.1</TargetFrameworks>
         <AssemblyName>GraphQL.AutoUnions</AssemblyName>
-        <RootNamespace>GraphQL.AutoUnions</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0-beta.0</Version>
+        <Title>GraphQL.AutoUnions</Title>
+        <Description>A library that provides a way to handle unions discriminated unions in `AddAutoSchema` cases for GraphQL.Net</Description>
+        <AssemblyName>GraphQL.AutoUnions.OneOf</AssemblyName>
+        <PackageProjectUrl>https://github.com/lolismatic/GraphQL.OneOf/tree/main/src/GraphQL.AutoUnions</PackageProjectUrl>
+        <PackageIcon>logo.64x64.png</PackageIcon>
+        <RepositoryUrl>https://github.com/lolismatic/GraphQL.OneOf</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>GraphQL Unions json api</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseUrl>https://licenses.nuget.org/Apache-2.0</PackageLicenseUrl>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="GraphQL" Version="7.2.1" />
+      <PackageReference Include="GraphQL" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\assets\logo.64x64.png">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+            <Link>assets\logo.64x64.png</Link>
+        </None>
+        <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+        <None Update="docs\README.md">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>

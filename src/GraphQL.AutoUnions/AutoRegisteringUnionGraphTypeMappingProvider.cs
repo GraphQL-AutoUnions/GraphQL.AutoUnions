@@ -4,7 +4,7 @@ namespace GraphQL.AutoUnions
     using GraphQL.Types;
 
     /// <inheritdoc cref="IGraphTypeMappingProvider"/>
-    public class AutoRegisteringUnionGraphTypeMappingProvider<TUnion> : IGraphTypeMappingProvider
+    internal class AutoRegisteringUnionGraphTypeMappingProvider<TUnion> : IGraphTypeMappingProvider
     {
         /// <inheritdoc cref="IGraphTypeMappingProvider"/>
         public Type GetGraphTypeFromClrType(Type clrType, bool isInputType, Type preferredGraphType)
