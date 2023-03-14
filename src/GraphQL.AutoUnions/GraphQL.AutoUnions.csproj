@@ -7,7 +7,7 @@
         <Version>1.0.0-beta.0</Version>
         <Title>GraphQL.AutoUnions</Title>
         <Description>A library that provides a way to handle unions discriminated unions in `AddAutoSchema` cases for GraphQL.Net</Description>
-        <AssemblyName>GraphQL.AutoUnions.OneOf</AssemblyName>
+        <AssemblyName>GraphQL.AutoUnions</AssemblyName>
         <PackageProjectUrl>https://github.com/lolismatic/GraphQL.OneOf/tree/main/src/GraphQL.AutoUnions</PackageProjectUrl>
         <PackageIcon>logo.64x64.png</PackageIcon>
         <RepositoryUrl>https://github.com/lolismatic/GraphQL.OneOf</RepositoryUrl>
@@ -27,7 +27,7 @@
             <PackagePath></PackagePath>
             <Link>assets\logo.64x64.png</Link>
         </None>
-        <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+        <None Include="docs\README.md" Pack="true" PackagePath="\" />
         <None Update="docs\README.md">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>

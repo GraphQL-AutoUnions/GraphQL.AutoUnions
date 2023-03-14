@@ -1,0 +1,11 @@
+{
+  "data": {
+    "product": {
+      "__typename": "Book",
+      "id": 1,
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "pageCount": 180
+    }
+  }
+}

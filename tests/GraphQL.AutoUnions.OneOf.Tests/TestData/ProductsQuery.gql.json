@@ -1,0 +1,76 @@
+{
+  "data": {
+    "products": [
+      {
+        "__typename": "Book",
+        "id": 1,
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "pageCount": 180
+      },
+      {
+        "__typename": "Book",
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "pageCount": 324
+      },
+      {
+        "__typename": "Book",
+        "id": 3,
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "pageCount": 224
+      },
+      {
+        "__typename": "Book",
+        "id": 4,
+        "name": "1984",
+        "author": "George Orwell",
+        "pageCount": 328
+      },
+      {
+        "__typename": "Book",
+        "id": 5,
+        "name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "pageCount": 432
+      },
+      {
+        "__typename": "Electronic",
+        "id": 1,
+        "name": "Sony Bravia TV",
+        "price": 899.989990234375,
+        "description": "55-inch smart LED TV with 4K resolution"
+      },
+      {
+        "__typename": "Electronic",
+        "id": 2,
+        "name": "Apple MacBook Pro",
+        "price": 1499.989990234375,
+        "description": "13-inch laptop with Retina display and 512GB storage"
+      },
+      {
+        "__typename": "Electronic",
+        "id": 3,
+        "name": "Samsung Galaxy S21",
+        "price": 799.989990234375,
+        "description": "5G smartphone with 128GB storage and triple rear camera"
+      },
+      {
+        "__typename": "Electronic",
+        "id": 4,
+        "name": "Amazon Echo Dot",
+        "price": 49.9900016784668,
+        "description": "Smart speaker with Alexa and voice control"
+      },
+      {
+        "__typename": "Electronic",
+        "id": 5,
+        "name": "DJI Mavic Air 2",
+        "price": 799.989990234375,
+        "description": "4K drone with 48MP camera and 34-minute flight time"
+      }
+    ]
+  }
+}
