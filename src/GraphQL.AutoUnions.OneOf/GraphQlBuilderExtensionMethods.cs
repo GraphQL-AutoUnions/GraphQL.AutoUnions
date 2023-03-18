@@ -31,7 +31,7 @@
                 },
                 (actualType, _) => actualType.GraphQLName()
             );
-
+            
             return builder;
         }
         

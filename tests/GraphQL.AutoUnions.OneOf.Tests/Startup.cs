@@ -24,6 +24,10 @@ public class Startup
                 options.AddAutoSchema<ProductQuery>();
                 options.AddOneOfAutoUnions();
                 options.AddSystemTextJson();
+                options.AddErrorInfoProvider((error) =>
+                {
+                    error.ExposeExceptionDetails = true;
+                });
             });
 
         services.AddRouting();

@@ -14,7 +14,7 @@ namespace GraphQL.AutoUnions
                 return preferredGraphType;
             }
 
-            return typeof(AutoRegisteringUnionGraphType<,>).MakeGenericType(typeof(TUnion), clrType);
+            return typeof(AutoRegisteringAutoUnionGraphType<,>).MakeGenericType(typeof(TUnion), clrType);
         }
     }
 }

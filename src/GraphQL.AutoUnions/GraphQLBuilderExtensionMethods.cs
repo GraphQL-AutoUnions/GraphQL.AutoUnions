@@ -51,8 +51,8 @@ namespace GraphQL
                 ServiceLifetime.Singleton);
 
             builderServices.TryRegister(
-                typeof(AutoRegisteringUnionGraphType<,>),
-                typeof(AutoRegisteringUnionGraphType<,>),
+                typeof(AutoRegisteringAutoUnionGraphType<,>),
+                typeof(AutoRegisteringAutoUnionGraphType<,>),
                 ServiceLifetime.Singleton);
 
             builderServices.TryRegister(
@@ -65,13 +65,29 @@ namespace GraphQL
                 typeof(UnionMemberFieldResolverFactory<T>),
                 ServiceLifetime.Singleton);
 
-            builderServices.TryRegister(
-                typeof(AutoRegisteringUnionMemberGraphType<,>),
-                typeof(AutoRegisteringUnionMemberGraphType<,>),ServiceLifetime.Singleton);
-
             builderServices.Register(
                 typeof(IGraphTypeMappingProvider),
                 typeof(AutoRegisteringUnionGraphTypeMappingProvider<T>),  ServiceLifetime.Singleton);
+
+            builder.ConfigureSchema((schema) =>
+            {
+                schema.FieldMiddleware.Use((next) =>
+                {
+                    return async (resolveFieldContext) =>
+                    {
+                        var cast =
+                            resolveFieldContext.RequestServices?.GetService(typeof(IUnionCast<T>)) as IUnionCast<T>;
+                        var result = await next(resolveFieldContext);
+
+                        return cast?.TryCast(result, out var unionMember) ?? false ? unionMember : result;
+                    };
+                });
+
+                var collect = new CollectUnionMembersVisitor();
+
+                schema.RegisterVisitor(collect);
+                schema.RegisterVisitor(new ModifyUnionMemberVisitor(collect));
+            });
 
             return builder;
         }

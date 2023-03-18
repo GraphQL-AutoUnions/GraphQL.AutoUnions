@@ -9,7 +9,6 @@
 
     <ItemGroup>
         <PackageReference Include="GraphQL.Server.All" Version="7.3.0" />
-        <PackageReference Include="GraphQL.AutoUnions.OneOf" Version="1.0.0-beta.1" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.14" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
         <PackageReference Include="xunit" Version="2.4.1" />
@@ -36,6 +35,10 @@
       <None Update="TestData\ProductQuery.gql">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\GraphQL.AutoUnions.OneOf\GraphQL.AutoUnions.OneOf.csproj" />
     </ItemGroup>
 
 </Project>

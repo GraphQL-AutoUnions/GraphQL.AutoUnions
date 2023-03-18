@@ -20,10 +20,15 @@ public class ProductQuery
 
     public static ProductUnion Product() => new Book()
         {Id = 1, Name = "The Great Gatsby", Author = "F. Scott Fitzgerald", PageCount = 180};
+
+    public static Book Book() => null;
 }
-    
+
 [OneOf.GenerateOneOf]
-public partial class ProductUnion : OneOf.OneOfBase<Book, Electronic>
+public partial class ProductUnion : OneOf.OneOfBase<
+    Book,
+    Electronic
+>
 {
 }
     

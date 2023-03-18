@@ -1,6 +1,6 @@
 namespace GraphQL.AutoUnions
 {
-    internal interface IUnionCast<TUnion>
+    public interface IUnionCast<TUnion>
     {
         bool TryCast(object obj, out TUnion union);
     }

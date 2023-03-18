@@ -30,8 +30,8 @@
                 type = graphTypeMappingProvider.GetGraphTypeFromClrType(
                     unionMemberClrType, 
                     false,
-                    typeof(AutoRegisteringUnionMemberGraphType<,>
-                ).MakeGenericType(typeof(TUnion), unionMemberClrType));
+                    typeof(AutoRegisteringObjectGraphType<>).MakeGenericType(unionMemberClrType)
+                );
             }
 
             if (type is null)

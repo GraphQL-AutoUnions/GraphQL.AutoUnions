@@ -17,7 +17,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="GraphQL.AutoUnions" Version="1.0.0-beta.0" />
         <PackageReference Include="OneOf" Version="3.0.160" />
         <PackageReference Include="OneOf.SourceGenerator" Version="3.0.184" />
     </ItemGroup>
@@ -32,6 +31,10 @@
         <None Update="docs\README.md">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GraphQL.AutoUnions\GraphQL.AutoUnions.csproj" />
     </ItemGroup>
 
 </Project>
