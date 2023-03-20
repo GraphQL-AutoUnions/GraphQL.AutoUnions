@@ -71,18 +71,6 @@ namespace GraphQL
 
             builder.ConfigureSchema((schema) =>
             {
-                schema.FieldMiddleware.Use((next) =>
-                {
-                    return async (resolveFieldContext) =>
-                    {
-                        var cast =
-                            resolveFieldContext.RequestServices?.GetService(typeof(IUnionCast<T>)) as IUnionCast<T>;
-                        var result = await next(resolveFieldContext);
-
-                        return cast?.TryCast(result, out var unionMember) ?? false ? unionMember : result;
-                    };
-                });
-
                 var collect = new CollectUnionMembersVisitor();
 
                 schema.RegisterVisitor(collect);
