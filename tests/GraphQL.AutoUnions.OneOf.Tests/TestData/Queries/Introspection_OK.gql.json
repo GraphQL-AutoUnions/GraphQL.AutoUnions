@@ -1,11 +1,16 @@
 {
+  "statusCode": 200,
   "data": {
     "__schema": {
       "queryType": {
         "name": "ProductQuery"
       },
-      "mutationType": null,
-      "subscriptionType": null,
+      "mutationType": {
+        "name": "ProductMutation"
+      },
+      "subscriptionType": {
+        "name": "ProductSubscription"
+      },
       "types": [
         {
           "kind": "OBJECT",
@@ -915,7 +920,22 @@
             {
               "name": "product",
               "description": null,
-              "args": [],
+              "args": [
+                {
+                  "name": "book",
+                  "description": null,
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Boolean",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": "true"
+                }
+              ],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -931,15 +951,53 @@
             {
               "name": "book",
               "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "OBJECT",
-                  "name": "Book",
-                  "ofType": null
+              "args": [
+                {
+                  "name": "bookId",
+                  "description": null,
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Int",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
                 }
+              ],
+              "type": {
+                "kind": "OBJECT",
+                "name": "Book",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "electronic",
+              "description": null,
+              "args": [
+                {
+                  "name": "electronicId",
+                  "description": null,
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Int",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "OBJECT",
+                "name": "Electronic",
+                "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1140,6 +1198,75 @@
           "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ProductMutation",
+          "description": null,
+          "fields": [
+            {
+              "name": "addProduct",
+              "description": null,
+              "args": [
+                {
+                  "name": "book",
+                  "description": null,
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Boolean",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": "true"
+                }
+              ],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "UNION",
+                  "name": "ProductUnion",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ProductSubscription",
+          "description": null,
+          "fields": [
+            {
+              "name": "newProducts",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "UNION",
+                  "name": "ProductUnion",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
         }
       ],
       "directives": [
@@ -1215,5 +1342,6 @@
         }
       ]
     }
-  }
+  },
+  "errors": null
 }

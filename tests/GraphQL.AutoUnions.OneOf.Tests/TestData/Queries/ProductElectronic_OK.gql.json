@@ -1,0 +1,13 @@
+{
+  "statusCode": 200,
+  "data": {
+    "product": {
+      "__typename": "Electronic",
+      "id": 1,
+      "name": "Sony Bravia TV",
+      "price": 899.989990234375,
+      "description": "55-inch smart LED TV with 4K resolution"
+    }
+  },
+  "errors": null
+}

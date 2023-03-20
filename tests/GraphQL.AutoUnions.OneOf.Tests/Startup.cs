@@ -1,12 +1,13 @@
 ﻿namespace GraphQL.AutoUnions.Tests;
 
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using GraphQL.Server.Ui.Playground;
+using Microsoft.AspNetCore.WebSockets;
 
 public class Startup
 {
@@ -14,14 +15,27 @@ public class Startup
 
     public Startup(IConfiguration configuration)
     {
-        Configuration = configuration;
+        this.Configuration = configuration;
     }
 
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddLogging();
+        services.AddHttpLogging(options =>
+        {
+        });
+        
+        services.AddWebSockets(options =>
+        {
+            options.AllowedOrigins.Add("*");
+        });
+
         services.AddGraphQL(options =>
             {
-                options.AddAutoSchema<ProductQuery>();
+                options.AddAutoSchema<ProductQuery>((configureAutoSchema) =>
+                    configureAutoSchema
+                        .WithMutation<ProductMutation>()
+                        .WithSubscription<ProductSubscription>());
                 options.AddOneOfAutoUnions();
                 options.AddSystemTextJson();
                 options.AddErrorInfoProvider((error) =>
@@ -35,12 +49,21 @@ public class Startup
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
+        app.UseHttpLogging();
+        
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
         }
 
+        app.UseWebSockets();
         app.UseRouting();
+
+        app.UseGraphQL("/graphql", (options) =>
+        {
+            options.HandleGet = false;
+            options.HandleWebSockets = true;
+        });
 
         app.UseEndpoints(endpoints =>
         {

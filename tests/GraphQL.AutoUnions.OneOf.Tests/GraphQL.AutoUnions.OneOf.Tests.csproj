@@ -8,9 +8,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="6.10.0" />
+        <PackageReference Include="GraphQL.AutoUnions.OneOf" Version="1.0.0-beta.3" />
+        <PackageReference Include="GraphQL.Client" Version="5.1.1" />
+        <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="5.1.1" />
         <PackageReference Include="GraphQL.Server.All" Version="7.3.0" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.14" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+        <PackageReference Include="System.Reactive" Version="5.0.0" />
         <PackageReference Include="xunit" Version="2.4.1" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -23,16 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="TestData\*.gql">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="TestData\*.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="TestData\ProductQuery.gql.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="TestData\ProductQuery.gql">
+      <None Update="TestData\**\*.*">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

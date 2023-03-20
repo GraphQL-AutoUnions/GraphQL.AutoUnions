@@ -1,0 +1,28 @@
+[
+  {
+    "Data": {
+      "newProducts": {
+        "__typename": "Book",
+        "id": 1,
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "pageCount": 180
+      }
+    },
+    "Errors": null,
+    "Extensions": null
+  },
+  {
+    "Data": {
+      "newProducts": {
+        "__typename": "Electronic",
+        "id": 1,
+        "name": "Sony Bravia TV",
+        "price": 899.989990234375,
+        "description": "55-inch smart LED TV with 4K resolution"
+      }
+    },
+    "Errors": null,
+    "Extensions": null
+  }
+]

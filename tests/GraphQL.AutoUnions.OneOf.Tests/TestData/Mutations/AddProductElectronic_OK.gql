@@ -1,0 +1,17 @@
+mutation {
+    addProduct(book: false) {
+        __typename
+        ...on Book {
+            id
+            name
+            author
+            pageCount
+        }
+        ...on Electronic {
+            id
+            name
+            price
+            description
+        }
+    }
+}
