@@ -9,8 +9,14 @@ namespace GraphQL
     public static class GraphQlBuilderExtensionMethods
     {
         /// <summary>
-        /// Adds one of union support.
+        /// Adds support for unions of types that share a common discriminator field.
         /// </summary>
+        /// <typeparam name="T">The type of the discriminator field.</typeparam>
+        /// <param name="builder">The GraphQL builder.</param>
+        /// <param name="selectValue">A function that selects the discriminator value for a given object.</param>
+        /// <param name="selectMembers">A function that selects the member types for a given discriminator value.</param>
+        /// <param name="selectName">An optional function that selects the name for the union type.</param>
+        /// <returns>The GraphQL builder with added union support.</returns>
         public static IGraphQLBuilder AddAutoUnions<T>(
             this IGraphQLBuilder builder,
             Func<T, object> selectValue,

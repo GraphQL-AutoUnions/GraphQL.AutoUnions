@@ -2,9 +2,10 @@ namespace GraphQL.AutoUnions
 {
     using GraphQL.Types;
 
-    public interface IAutoUnion
+    internal interface IAutoUnion
     {
         bool IsMember(IGraphType member);
+
         void ModifyMember(IObjectGraphType graphType);
     }
 }

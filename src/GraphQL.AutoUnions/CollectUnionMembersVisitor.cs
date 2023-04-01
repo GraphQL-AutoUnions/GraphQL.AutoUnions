@@ -7,7 +7,7 @@
 
     internal class CollectUnionMembersVisitor : BaseSchemaNodeVisitor
     {
-        private HashSet<IAutoUnion> unions = new HashSet<IAutoUnion>();
+        private HashSet<IAutoUnion> _unions = new HashSet<IAutoUnion>();
         
         public override void VisitUnion(UnionGraphType type, ISchema schema)
         {
@@ -17,10 +17,10 @@
 
             if (union != null)
             {
-                this.unions.Add(union);
+                this._unions.Add(union);
             }
         }
 
-        public IReadOnlyCollection<IAutoUnion> Unions => this.unions;
+        public IReadOnlyCollection<IAutoUnion> Unions => this._unions;
     }
 }

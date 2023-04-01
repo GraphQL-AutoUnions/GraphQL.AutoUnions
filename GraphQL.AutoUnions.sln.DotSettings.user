@@ -1,0 +1,116 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\dpatiu\.nuget\packages\microsoft.netcore.app.ref\5.0.0\ref\net5.0\Microsoft.CSharp.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8d63157c_002D0571_002D42c2_002D9100_002D97b08a022eb2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestGraphQL(query: { query = fragment FullType on __Type {\r\n    kind\r\n    name\r\n    description\r\n    fields(includeDeprecated: true) {\r\n        name\r\n        description\r\n        args {\r\n            ...InputValue\r\n        }\r\n        type {\r\n            ...TypeRef\r\n        }\r\n        isDeprecated\r\n        deprecationReason\r\n    }\r\n    inputFields {\r\n        ...InputValue\r\n    }\r\n    interfaces {\r\n        ...TypeRef\r\n    }\r\n    enumValues(includeDeprecated: true) {\r\n        name\r\n        description\r\n        isDeprecated\r\n        deprecationReason\r\n    }\r\n    possibleTypes {\r\n        ...TypeRef\r\n    }\r\n}\r\n\r\nfragment InputValue on __InputValue {\r\n    name\r\n    description\r\n    type { ...TypeRef }\r\n    defaultValue\r\n}\r\n\r\nfragment TypeRef on __Type {\r\n    kind\r\n    name\r\n    ofType {\r\n        kind\r\n        name\r\n        ofType {\r\n            kind\r\n            name\r\n            ofType {\r\n                kind\r\n                name\r\n                ofType {\r\n                    kind\r\n                    name\r\n                    ofType {\r\n                        kind\r\n                        name\r\n                        ofType {\r\n                            kind\r\n                            name\r\n                            ofType {\r\n                                kind\r\n                                name\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\nquery IntrospectionQuery {\r\n    __schema {\r\n        queryType { name }\r\n        mutationType { name }\r\n        subscriptionType { name }\r\n        types {\r\n            ...FullType\r\n        }\r\n        directives {\r\n            name\r\n            description\r\n            locations\r\n            args {\r\n                ...InputValue\r\n            }\r\n        }\r\n    }\r\n}\r\n }, expectedStatusCode: OK, expectedBody: &amp;quot;{\r\n  \&amp;quot;data\&amp;quot;: {\r\n    \&amp;quot;__schema\&amp;quot;: {\r\n     &amp;quot;...) #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId xml:space="preserve"&gt;xUnit::843D0537-836D-446A-9BCB-5C85C63C9ABD::net6.0::GraphQL.AutoUnions.Tests.GraphQLTests.TestGraphQL.TestGraphQL(query: { query = fragment FullType on __Type {\r\n    kind\r\n    name\r\n    description\r\n    fields(includeDeprecated: true) {\r\n        name\r\n        description\r\n        args {\r\n            ...InputValue\r\n        }\r\n        type {\r\n            ...TypeRef\r\n        }\r\n        isDeprecated\r\n        deprecationReason\r\n    }\r\n    inputFields {\r\n        ...InputValue\r\n    }\r\n    interfaces {\r\n        ...TypeRef\r\n    }\r\n    enumValues(includeDeprecated: true) {\r\n        name\r\n        description\r\n        isDeprecated\r\n        deprecationReason\r\n    }\r\n    possibleTypes {\r\n        ...TypeRef\r\n    }\r\n}\r\n\r\nfragment InputValue on __InputValue {\r\n    name\r\n    description\r\n    type { ...TypeRef }\r\n    defaultValue\r\n}\r\n\r\nfragment TypeRef on __Type {\r\n    kind\r\n    name\r\n    ofType {\r\n        kind\r\n        name\r\n        ofType {\r\n            kind\r\n            name\r\n            ofType {\r\n                kind\r\n                name\r\n                ofType {\r\n                    kind\r\n                    name\r\n                    ofType {\r\n                        kind\r\n                        name\r\n                        ofType {\r\n                            kind\r\n                            name\r\n                            ofType {\r\n                                kind\r\n                                name\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\nquery IntrospectionQuery {\r\n    __schema {\r\n        queryType { name }\r\n        mutationType { name }\r\n        subscriptionType { name }\r\n        types {\r\n            ...FullType\r\n        }\r\n        directives {\r\n            name\r\n            description\r\n            locations\r\n            args {\r\n                ...InputValue\r\n            }\r\n        }\r\n    }\r\n}\r\n }, expectedStatusCode: OK, expectedBody: "{\r\n  \"data\": {\r\n    \"__schema\": {\r\n     "...)&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b8db9956_002De2c3_002D47b6_002Dadb7_002D8f8721684ae2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Queries" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\dpatiu\Projects\Personal\GraphQL.AutoUnions\tests\GraphQL.AutoUnions.OneOf.Tests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;GraphQL.AutoUnions.OneOf.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>
