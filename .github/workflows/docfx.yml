@@ -60,4 +60,4 @@ jobs:
           cp -R _site/* .
           git add .
           git commit -m "Update DocFX documentation"
-          git push
+          git push origin gh-pages
