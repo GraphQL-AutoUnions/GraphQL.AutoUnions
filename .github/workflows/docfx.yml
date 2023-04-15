@@ -49,21 +49,20 @@ jobs:
       - name: Build DocFX
         run: |
           dotnet build docs/DocFX
+          mkdir _site
+          mv docs/DocFX/_site/* _site
 
       - name: Publish DocFX
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git fetch origin gh-pages:gh-pages
           export PATH="$HOME/.dotnet/tools:$PATH"
-          mkdir _site
-          mv docs/DocFX/_site/* _site
-          rm -rf docs
-          mkdir docs
-          mv _site/* docs
-          rm -rf _site
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@users.noreply.github.com"
           git checkout gh-pages
+          rm -rf docs
+          mkdir docs
+          mv _site/* docs
           git add docs/*
           git commit -m "Update DocFX documentation"
           git log -1 --pretty=format:'%s'
