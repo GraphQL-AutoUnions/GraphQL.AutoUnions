@@ -46,9 +46,7 @@ jobs:
 
       - name: Build DocFX
         run: |
-          export PATH="$HOME/.dotnet/tools:$PATH"
-          cd docs/DocFX
-          docfx build docfx.yml
+          dotnet build docs/DocFX
 
       - name: Publish DocFX
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
