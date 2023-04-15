@@ -1,0 +1,63 @@
+name: Build, Test and Publish DocFX
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Build projects
+        run: |
+          dotnet build src/**
+
+      - name: Test projects
+        run: |
+          dotnet test tests/**
+
+  build-test-publish-docfx:
+    needs: build-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Install DocFX
+        run: dotnet tool install --global docfx
+
+      - name: Build DocFX
+        run: |
+          export PATH="$HOME/.dotnet/tools:$PATH"
+          cd docs/DocFX
+          docfx build docfx.yml
+
+      - name: Publish DocFX
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          export PATH="$HOME/.dotnet/tools:$PATH"
+          cd docs/DocFX
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git checkout gh-pages
+          cp -R _site/* .
+          git add .
+          git commit -m "Update DocFX documentation"
+          git push
