@@ -55,12 +55,16 @@ jobs:
         run: |
           git fetch origin gh-pages:gh-pages
           export PATH="$HOME/.dotnet/tools:$PATH"
-          cd docs/DocFX
+          mkdir _site
+          mv docs/DocFX/_site/* _site
+          rm -rf docs
+          mkdir docs
+          mv _site/* docs
+          rm -rf _site
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@users.noreply.github.com"
           git checkout gh-pages
-          cp -R _site/* .
-          git add .
+          git add docs/*
           git commit -m "Update DocFX documentation"
           git log -1 --pretty=format:'%s'
           git push origin gh-pages
