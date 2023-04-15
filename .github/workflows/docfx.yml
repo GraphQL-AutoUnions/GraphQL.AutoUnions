@@ -51,6 +51,7 @@ jobs:
       - name: Publish DocFX
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
+          git fetch origin gh-pages:gh-pages
           export PATH="$HOME/.dotnet/tools:$PATH"
           cd docs/DocFX
           git config --global user.name "GitHub Actions"
