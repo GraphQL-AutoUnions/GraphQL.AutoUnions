@@ -1,0 +1,236 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/GraphQL.AutoUnions/GraphQL.AutoUnions/docs/DocFX",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html",
+          "hash": "T8B1fWzgpB6/qPiYA0jVainFZJnnMNaWqy6/6WhK8Uc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.AutoUnions.IUnionCast-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.AutoUnions.IUnionCast-1.html",
+          "hash": "lJbywuBJ2IUlStOWIk4bnAQ43mvKhU0eeB3TdfWy7ho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.AutoUnions.IUnionMemberFieldResolverFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.AutoUnions.IUnionMemberFieldResolverFactory-1.html",
+          "hash": "DSq2k5HKfq/M6iy5K6ET+yxPm0iMzhwlyxQXM1nXflI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.AutoUnions.IUnionMemberProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.AutoUnions.IUnionMemberProvider-1.html",
+          "hash": "sMZPd8do8glfsD74k+n9iOECy07Mu86LQ5ohYqY1tHQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.AutoUnions.IUnionNameProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.AutoUnions.IUnionNameProvider-1.html",
+          "hash": "pzklIQebhZZ4F839xVIRoxoNMJz8t0VPnkga1XNfHCo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.AutoUnions.IUnionResolverFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.AutoUnions.IUnionResolverFactory-1.html",
+          "hash": "l+TRGi6EADA0e3rYnGaxzJSs5Bev27s7LGEGS9jnK6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.AutoUnions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.AutoUnions.html",
+          "hash": "+1YyF90WSOodF5IMF1EKpKIFvZWB78G9dUvq+xxDjps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.GraphQlBuilderExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.GraphQlBuilderExtensionMethods.html",
+          "hash": "lQw+vxaHNQcoHJLJKBK+tk4JcjOFor6wMMZ3ur8inRM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GraphQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GraphQL.html",
+          "hash": "oblWoi/85u6NIJzw1ABEa93Cu+wm84eOFZ0kW2VSt/g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "QT4VFpvbveswU6gT/N9HPFz3tQDHmaKXZdsN/FvL0GM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "YLqQm9aTWXRFgqphpLE7GnDnuhnFaovTCeC8DER7L0o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started.html",
+          "hash": "7uh9hRXEkn+P+oJbzCOTWtJxIaoFHmO1YIyD5zJP50M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "p8/v8rqJcxsbq5iDBUo/SZ9cji58fPcqwdm2W6TLgV0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "YeNGWU/G7/CPbSJ3O9AwspEp17EbSATdsBz4//FVa+c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Kq9DUhJ6Ko+saoZwNs1Km2WBx0lbItcA4iXkrGIFUN4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 9,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

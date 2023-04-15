@@ -1,0 +1,228 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: GraphQL
+  name: GraphQL
+  href: api/GraphQL.html
+  commentId: N:GraphQL
+  fullName: GraphQL
+  nameWithType: GraphQL
+- uid: GraphQL.AutoUnions
+  name: GraphQL.AutoUnions
+  href: api/GraphQL.AutoUnions.html
+  commentId: N:GraphQL.AutoUnions
+  fullName: GraphQL.AutoUnions
+  nameWithType: GraphQL.AutoUnions
+- uid: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2
+  name: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>
+  href: api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html
+  commentId: T:GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2
+  name.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation)
+  fullName: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>
+  fullName.vb: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation)
+  nameWithType: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>
+  nameWithType.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation)
+- uid: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.#ctor(GraphQL.AutoUnions.IUnionNameProvider{`0},GraphQL.AutoUnions.IUnionMemberProvider{`0},GraphQL.AutoUnions.IUnionResolverFactory{`0},GraphQL.AutoUnions.IUnionCast{`0},GraphQL.AutoUnions.IUnionMemberFieldResolverFactory{`0})
+  name: AutoRegisteringAutoUnionGraphType(IUnionNameProvider<TUnion>, IUnionMemberProvider<TUnion>, IUnionResolverFactory<TUnion>, IUnionCast<TUnion>, IUnionMemberFieldResolverFactory<TUnion>)
+  href: api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html#GraphQL_AutoUnions_AutoRegisteringAutoUnionGraphType_2__ctor_GraphQL_AutoUnions_IUnionNameProvider__0__GraphQL_AutoUnions_IUnionMemberProvider__0__GraphQL_AutoUnions_IUnionResolverFactory__0__GraphQL_AutoUnions_IUnionCast__0__GraphQL_AutoUnions_IUnionMemberFieldResolverFactory__0__
+  commentId: M:GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.#ctor(GraphQL.AutoUnions.IUnionNameProvider{`0},GraphQL.AutoUnions.IUnionMemberProvider{`0},GraphQL.AutoUnions.IUnionResolverFactory{`0},GraphQL.AutoUnions.IUnionCast{`0},GraphQL.AutoUnions.IUnionMemberFieldResolverFactory{`0})
+  name.vb: AutoRegisteringAutoUnionGraphType(IUnionNameProvider(Of TUnion), IUnionMemberProvider(Of TUnion), IUnionResolverFactory(Of TUnion), IUnionCast(Of TUnion), IUnionMemberFieldResolverFactory(Of TUnion))
+  fullName: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.AutoRegisteringAutoUnionGraphType(GraphQL.AutoUnions.IUnionNameProvider<TUnion>, GraphQL.AutoUnions.IUnionMemberProvider<TUnion>, GraphQL.AutoUnions.IUnionResolverFactory<TUnion>, GraphQL.AutoUnions.IUnionCast<TUnion>, GraphQL.AutoUnions.IUnionMemberFieldResolverFactory<TUnion>)
+  fullName.vb: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).AutoRegisteringAutoUnionGraphType(GraphQL.AutoUnions.IUnionNameProvider(Of TUnion), GraphQL.AutoUnions.IUnionMemberProvider(Of TUnion), GraphQL.AutoUnions.IUnionResolverFactory(Of TUnion), GraphQL.AutoUnions.IUnionCast(Of TUnion), GraphQL.AutoUnions.IUnionMemberFieldResolverFactory(Of TUnion))
+  nameWithType: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.AutoRegisteringAutoUnionGraphType(IUnionNameProvider<TUnion>, IUnionMemberProvider<TUnion>, IUnionResolverFactory<TUnion>, IUnionCast<TUnion>, IUnionMemberFieldResolverFactory<TUnion>)
+  nameWithType.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).AutoRegisteringAutoUnionGraphType(IUnionNameProvider(Of TUnion), IUnionMemberProvider(Of TUnion), IUnionResolverFactory(Of TUnion), IUnionCast(Of TUnion), IUnionMemberFieldResolverFactory(Of TUnion))
+- uid: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.#ctor*
+  name: AutoRegisteringAutoUnionGraphType
+  href: api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html#GraphQL_AutoUnions_AutoRegisteringAutoUnionGraphType_2__ctor_
+  commentId: Overload:GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.#ctor
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.AutoRegisteringAutoUnionGraphType
+  fullName.vb: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).AutoRegisteringAutoUnionGraphType
+  nameWithType: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.AutoRegisteringAutoUnionGraphType
+  nameWithType.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).AutoRegisteringAutoUnionGraphType
+- uid: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.IsMember(IGraphType)
+  name: IsMember(IGraphType)
+  href: api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html#GraphQL_AutoUnions_AutoRegisteringAutoUnionGraphType_2_IsMember_IGraphType_
+  commentId: M:GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.IsMember(IGraphType)
+  fullName: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.IsMember(IGraphType)
+  fullName.vb: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).IsMember(IGraphType)
+  nameWithType: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.IsMember(IGraphType)
+  nameWithType.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).IsMember(IGraphType)
+- uid: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.IsMember*
+  name: IsMember
+  href: api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html#GraphQL_AutoUnions_AutoRegisteringAutoUnionGraphType_2_IsMember_
+  commentId: Overload:GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.IsMember
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.IsMember
+  fullName.vb: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).IsMember
+  nameWithType: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.IsMember
+  nameWithType.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).IsMember
+- uid: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.ModifyMember(IObjectGraphType)
+  name: ModifyMember(IObjectGraphType)
+  href: api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html#GraphQL_AutoUnions_AutoRegisteringAutoUnionGraphType_2_ModifyMember_IObjectGraphType_
+  commentId: M:GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.ModifyMember(IObjectGraphType)
+  fullName: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.ModifyMember(IObjectGraphType)
+  fullName.vb: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).ModifyMember(IObjectGraphType)
+  nameWithType: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.ModifyMember(IObjectGraphType)
+  nameWithType.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).ModifyMember(IObjectGraphType)
+- uid: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.ModifyMember*
+  name: ModifyMember
+  href: api/GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType-2.html#GraphQL_AutoUnions_AutoRegisteringAutoUnionGraphType_2_ModifyMember_
+  commentId: Overload:GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType`2.ModifyMember
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.ModifyMember
+  fullName.vb: GraphQL.AutoUnions.AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).ModifyMember
+  nameWithType: AutoRegisteringAutoUnionGraphType<TUnion, TUnionImplementation>.ModifyMember
+  nameWithType.vb: AutoRegisteringAutoUnionGraphType(Of TUnion, TUnionImplementation).ModifyMember
+- uid: GraphQL.AutoUnions.IUnionCast`1
+  name: IUnionCast<TUnion>
+  href: api/GraphQL.AutoUnions.IUnionCast-1.html
+  commentId: T:GraphQL.AutoUnions.IUnionCast`1
+  name.vb: IUnionCast(Of TUnion)
+  fullName: GraphQL.AutoUnions.IUnionCast<TUnion>
+  fullName.vb: GraphQL.AutoUnions.IUnionCast(Of TUnion)
+  nameWithType: IUnionCast<TUnion>
+  nameWithType.vb: IUnionCast(Of TUnion)
+- uid: GraphQL.AutoUnions.IUnionCast`1.TryCast(System.Object,`0@)
+  name: TryCast(Object, out TUnion)
+  href: api/GraphQL.AutoUnions.IUnionCast-1.html#GraphQL_AutoUnions_IUnionCast_1_TryCast_System_Object__0__
+  commentId: M:GraphQL.AutoUnions.IUnionCast`1.TryCast(System.Object,`0@)
+  name.vb: TryCast(Object, ByRef TUnion)
+  fullName: GraphQL.AutoUnions.IUnionCast<TUnion>.TryCast(System.Object, out TUnion)
+  fullName.vb: GraphQL.AutoUnions.IUnionCast(Of TUnion).TryCast(System.Object, ByRef TUnion)
+  nameWithType: IUnionCast<TUnion>.TryCast(Object, out TUnion)
+  nameWithType.vb: IUnionCast(Of TUnion).TryCast(Object, ByRef TUnion)
+- uid: GraphQL.AutoUnions.IUnionCast`1.TryCast*
+  name: TryCast
+  href: api/GraphQL.AutoUnions.IUnionCast-1.html#GraphQL_AutoUnions_IUnionCast_1_TryCast_
+  commentId: Overload:GraphQL.AutoUnions.IUnionCast`1.TryCast
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.IUnionCast<TUnion>.TryCast
+  fullName.vb: GraphQL.AutoUnions.IUnionCast(Of TUnion).TryCast
+  nameWithType: IUnionCast<TUnion>.TryCast
+  nameWithType.vb: IUnionCast(Of TUnion).TryCast
+- uid: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory`1
+  name: IUnionMemberFieldResolverFactory<TUnion>
+  href: api/GraphQL.AutoUnions.IUnionMemberFieldResolverFactory-1.html
+  commentId: T:GraphQL.AutoUnions.IUnionMemberFieldResolverFactory`1
+  name.vb: IUnionMemberFieldResolverFactory(Of TUnion)
+  fullName: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory<TUnion>
+  fullName.vb: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory(Of TUnion)
+  nameWithType: IUnionMemberFieldResolverFactory<TUnion>
+  nameWithType.vb: IUnionMemberFieldResolverFactory(Of TUnion)
+- uid: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory`1.Create(IFieldResolver)
+  name: Create(IFieldResolver)
+  href: api/GraphQL.AutoUnions.IUnionMemberFieldResolverFactory-1.html#GraphQL_AutoUnions_IUnionMemberFieldResolverFactory_1_Create_IFieldResolver_
+  commentId: M:GraphQL.AutoUnions.IUnionMemberFieldResolverFactory`1.Create(IFieldResolver)
+  fullName: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory<TUnion>.Create(IFieldResolver)
+  fullName.vb: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory(Of TUnion).Create(IFieldResolver)
+  nameWithType: IUnionMemberFieldResolverFactory<TUnion>.Create(IFieldResolver)
+  nameWithType.vb: IUnionMemberFieldResolverFactory(Of TUnion).Create(IFieldResolver)
+- uid: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory`1.Create*
+  name: Create
+  href: api/GraphQL.AutoUnions.IUnionMemberFieldResolverFactory-1.html#GraphQL_AutoUnions_IUnionMemberFieldResolverFactory_1_Create_
+  commentId: Overload:GraphQL.AutoUnions.IUnionMemberFieldResolverFactory`1.Create
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory<TUnion>.Create
+  fullName.vb: GraphQL.AutoUnions.IUnionMemberFieldResolverFactory(Of TUnion).Create
+  nameWithType: IUnionMemberFieldResolverFactory<TUnion>.Create
+  nameWithType.vb: IUnionMemberFieldResolverFactory(Of TUnion).Create
+- uid: GraphQL.AutoUnions.IUnionMemberProvider`1
+  name: IUnionMemberProvider<TUnion>
+  href: api/GraphQL.AutoUnions.IUnionMemberProvider-1.html
+  commentId: T:GraphQL.AutoUnions.IUnionMemberProvider`1
+  name.vb: IUnionMemberProvider(Of TUnion)
+  fullName: GraphQL.AutoUnions.IUnionMemberProvider<TUnion>
+  fullName.vb: GraphQL.AutoUnions.IUnionMemberProvider(Of TUnion)
+  nameWithType: IUnionMemberProvider<TUnion>
+  nameWithType.vb: IUnionMemberProvider(Of TUnion)
+- uid: GraphQL.AutoUnions.IUnionMemberProvider`1.Provide(Type)
+  name: Provide(Type)
+  href: api/GraphQL.AutoUnions.IUnionMemberProvider-1.html#GraphQL_AutoUnions_IUnionMemberProvider_1_Provide_Type_
+  commentId: M:GraphQL.AutoUnions.IUnionMemberProvider`1.Provide(Type)
+  fullName: GraphQL.AutoUnions.IUnionMemberProvider<TUnion>.Provide(Type)
+  fullName.vb: GraphQL.AutoUnions.IUnionMemberProvider(Of TUnion).Provide(Type)
+  nameWithType: IUnionMemberProvider<TUnion>.Provide(Type)
+  nameWithType.vb: IUnionMemberProvider(Of TUnion).Provide(Type)
+- uid: GraphQL.AutoUnions.IUnionMemberProvider`1.Provide*
+  name: Provide
+  href: api/GraphQL.AutoUnions.IUnionMemberProvider-1.html#GraphQL_AutoUnions_IUnionMemberProvider_1_Provide_
+  commentId: Overload:GraphQL.AutoUnions.IUnionMemberProvider`1.Provide
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.IUnionMemberProvider<TUnion>.Provide
+  fullName.vb: GraphQL.AutoUnions.IUnionMemberProvider(Of TUnion).Provide
+  nameWithType: IUnionMemberProvider<TUnion>.Provide
+  nameWithType.vb: IUnionMemberProvider(Of TUnion).Provide
+- uid: GraphQL.AutoUnions.IUnionNameProvider`1
+  name: IUnionNameProvider<TUnion>
+  href: api/GraphQL.AutoUnions.IUnionNameProvider-1.html
+  commentId: T:GraphQL.AutoUnions.IUnionNameProvider`1
+  name.vb: IUnionNameProvider(Of TUnion)
+  fullName: GraphQL.AutoUnions.IUnionNameProvider<TUnion>
+  fullName.vb: GraphQL.AutoUnions.IUnionNameProvider(Of TUnion)
+  nameWithType: IUnionNameProvider<TUnion>
+  nameWithType.vb: IUnionNameProvider(Of TUnion)
+- uid: GraphQL.AutoUnions.IUnionNameProvider`1.Provide(Type,IReadOnlyCollection{Type})
+  name: Provide(Type, IReadOnlyCollection<Type>)
+  href: api/GraphQL.AutoUnions.IUnionNameProvider-1.html#GraphQL_AutoUnions_IUnionNameProvider_1_Provide_Type_IReadOnlyCollection_Type__
+  commentId: M:GraphQL.AutoUnions.IUnionNameProvider`1.Provide(Type,IReadOnlyCollection{Type})
+  name.vb: Provide(Type, IReadOnlyCollection(Of Type))
+  fullName: GraphQL.AutoUnions.IUnionNameProvider<TUnion>.Provide(Type, IReadOnlyCollection<Type>)
+  fullName.vb: GraphQL.AutoUnions.IUnionNameProvider(Of TUnion).Provide(Type, IReadOnlyCollection(Of Type))
+  nameWithType: IUnionNameProvider<TUnion>.Provide(Type, IReadOnlyCollection<Type>)
+  nameWithType.vb: IUnionNameProvider(Of TUnion).Provide(Type, IReadOnlyCollection(Of Type))
+- uid: GraphQL.AutoUnions.IUnionNameProvider`1.Provide*
+  name: Provide
+  href: api/GraphQL.AutoUnions.IUnionNameProvider-1.html#GraphQL_AutoUnions_IUnionNameProvider_1_Provide_
+  commentId: Overload:GraphQL.AutoUnions.IUnionNameProvider`1.Provide
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.IUnionNameProvider<TUnion>.Provide
+  fullName.vb: GraphQL.AutoUnions.IUnionNameProvider(Of TUnion).Provide
+  nameWithType: IUnionNameProvider<TUnion>.Provide
+  nameWithType.vb: IUnionNameProvider(Of TUnion).Provide
+- uid: GraphQL.AutoUnions.IUnionResolverFactory`1
+  name: IUnionResolverFactory<TUnion>
+  href: api/GraphQL.AutoUnions.IUnionResolverFactory-1.html
+  commentId: T:GraphQL.AutoUnions.IUnionResolverFactory`1
+  name.vb: IUnionResolverFactory(Of TUnion)
+  fullName: GraphQL.AutoUnions.IUnionResolverFactory<TUnion>
+  fullName.vb: GraphQL.AutoUnions.IUnionResolverFactory(Of TUnion)
+  nameWithType: IUnionResolverFactory<TUnion>
+  nameWithType.vb: IUnionResolverFactory(Of TUnion)
+- uid: GraphQL.AutoUnions.IUnionResolverFactory`1.Create(Type[])
+  name: Create(Type[])
+  href: api/GraphQL.AutoUnions.IUnionResolverFactory-1.html#GraphQL_AutoUnions_IUnionResolverFactory_1_Create_Type___
+  commentId: M:GraphQL.AutoUnions.IUnionResolverFactory`1.Create(Type[])
+  name.vb: Create(Type())
+  fullName: GraphQL.AutoUnions.IUnionResolverFactory<TUnion>.Create(Type[])
+  fullName.vb: GraphQL.AutoUnions.IUnionResolverFactory(Of TUnion).Create(Type())
+  nameWithType: IUnionResolverFactory<TUnion>.Create(Type[])
+  nameWithType.vb: IUnionResolverFactory(Of TUnion).Create(Type())
+- uid: GraphQL.AutoUnions.IUnionResolverFactory`1.Create*
+  name: Create
+  href: api/GraphQL.AutoUnions.IUnionResolverFactory-1.html#GraphQL_AutoUnions_IUnionResolverFactory_1_Create_
+  commentId: Overload:GraphQL.AutoUnions.IUnionResolverFactory`1.Create
+  isSpec: "True"
+  fullName: GraphQL.AutoUnions.IUnionResolverFactory<TUnion>.Create
+  fullName.vb: GraphQL.AutoUnions.IUnionResolverFactory(Of TUnion).Create
+  nameWithType: IUnionResolverFactory<TUnion>.Create
+  nameWithType.vb: IUnionResolverFactory(Of TUnion).Create
+- uid: GraphQL.GraphQlBuilderExtensionMethods
+  name: GraphQlBuilderExtensionMethods
+  href: api/GraphQL.GraphQlBuilderExtensionMethods.html
+  commentId: T:GraphQL.GraphQlBuilderExtensionMethods
+  fullName: GraphQL.GraphQlBuilderExtensionMethods
+  nameWithType: GraphQlBuilderExtensionMethods
+- uid: GraphQL.GraphQlBuilderExtensionMethods.AddOneOfAutoUnions(IGraphQLBuilder)
+  name: AddOneOfAutoUnions(IGraphQLBuilder)
+  href: api/GraphQL.GraphQlBuilderExtensionMethods.html#GraphQL_GraphQlBuilderExtensionMethods_AddOneOfAutoUnions_IGraphQLBuilder_
+  commentId: M:GraphQL.GraphQlBuilderExtensionMethods.AddOneOfAutoUnions(IGraphQLBuilder)
+  fullName: GraphQL.GraphQlBuilderExtensionMethods.AddOneOfAutoUnions(IGraphQLBuilder)
+  nameWithType: GraphQlBuilderExtensionMethods.AddOneOfAutoUnions(IGraphQLBuilder)
+- uid: GraphQL.GraphQlBuilderExtensionMethods.AddOneOfAutoUnions*
+  name: AddOneOfAutoUnions
+  href: api/GraphQL.GraphQlBuilderExtensionMethods.html#GraphQL_GraphQlBuilderExtensionMethods_AddOneOfAutoUnions_
+  commentId: Overload:GraphQL.GraphQlBuilderExtensionMethods.AddOneOfAutoUnions
+  isSpec: "True"
+  fullName: GraphQL.GraphQlBuilderExtensionMethods.AddOneOfAutoUnions
+  nameWithType: GraphQlBuilderExtensionMethods.AddOneOfAutoUnions
