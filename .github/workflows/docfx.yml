@@ -22,7 +22,8 @@ jobs:
 
       - name: Build projects
         run: |
-          dotnet build src/**
+          dotnet build src/GraphQL.AutoUnions
+          dotnet build src/GraphQL.AutoUnions.OneOf
 
       - name: Test projects
         run: |
