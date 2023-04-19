@@ -5,9 +5,9 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Getting started </title>
+      <title>Getting started with GraphQL.AutoUnions.OneOf </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Getting started ">
+      <meta name="title" content="Getting started with GraphQL.AutoUnions.OneOf ">
       <meta name="generator" content="docfx 2.59.4.0">
       
       <link rel="shortcut icon" href="../favicon.ico">
@@ -77,10 +77,39 @@
                         </div>
 
                     <article class="content wrap" id="_content" data-uid="">
-<h1 id="getting-started">Getting started</h1>
+<h1 id="getting-started-with-graphqlautounionsoneof">Getting started with <code>GraphQL.AutoUnions.OneOf</code></h1>
 
-<p>At the moment the intent of the <code>GraphQL.AutoUnions</code> library is to be used as building block for other <code>AutoUnion</code> libraries.</p>
-<p>If you want to use this library with <a href="https://github.com/mcintyre321/OneOf">OneOf</a> check out <a href="">how to get started with GraphQL.AutoUnions.OneOf</a></p>
+<p>Install the latest version of the nuget.</p>
+<pre><code class="lang-powershell">dotnet add package GraphQL.AutoUnions.OneOf
+</code></pre>
+<p>Add the library to the GraphqQl builder.</p>
+<pre><code class="lang-csharp">services.AddGraphQL(options =&gt;
+{
+    options.AddOneOfAutoUnions(); // &lt;---
+    options.AddSystemTextJson();
+    options.AddErrorInfoProvider((error) =&gt;
+    {
+        error.ExposeExceptionDetails = true;
+    });
+    // register auto schemas
+    gqlBuilder.AddAutoSchema&lt;ProductQuery&gt;();
+});
+</code></pre>
+<p>Create union types, ideally with <code>[GenerateOneOf]</code> attributes.</p>
+<pre><code class="lang-csharp">[GenerateOneOf]
+public partial class ProductUnion : OneOfBase&lt;Book, Electronic&gt;
+{
+}
+</code></pre>
+<p>Use the union inside a auto schema endpoint. (Currently we do not support union arguments.)</p>
+<pre><code class="lang-csharp">public class ProductQuery
+{
+    public static IEnumerable&lt;ProductUnion&gt; Products([FromServices] IProductService productService)
+    {
+        return productService.GetProducts();
+    }
+}
+</code></pre>
 </article>
                 </div>
 

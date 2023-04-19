@@ -137,11 +137,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/getting-started-one-of.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started-one-of.html",
+          "hash": "BNLOWleBSpIB70ycSn9QE15K/vVXzNYqIIVPVxRRJ6Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/getting-started.md",
       "output": {
         ".html": {
           "relative_path": "articles/getting-started.html",
-          "hash": "7uh9hRXEkn+P+oJbzCOTWtJxIaoFHmO1YIyD5zJP50M="
+          "hash": "xC8bWEQacGzg1vZD3LM7MLqmcYD/EWyQGDFS0UXI+kY="
         }
       },
       "is_incremental": false,
@@ -153,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "p8/v8rqJcxsbq5iDBUo/SZ9cji58fPcqwdm2W6TLgV0="
+          "hash": "1M9GglJteDzDTn1FNKIKJ7NySoPWTRhm9bp4LUfcCR4="
         }
       },
       "is_incremental": false,
@@ -198,7 +210,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
